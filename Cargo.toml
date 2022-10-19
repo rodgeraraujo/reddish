@@ -1,0 +1,22 @@
+[package]
+name = "reddish"
+version = "0.0.0"
+edition = "2021"
+description = """
+A Rust utility library
+"""
+authors = ["Rogério Araújo <rogerio.araujo@mail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/rodgeraraujo/reddish"
+documentation = "https://docs.rs/reddish"
+homepage = "https://reddish.github.io"
+include = ["Cargo.toml", "src/", "LICENSE", "README.md"]
+
+[feature]
+default = ["string"]
+string = ["camel_case", "capitalize", "kebab_case", "snake_case", "title_case"]
+
+[dependencies]
+
+[dev-dependencies]
