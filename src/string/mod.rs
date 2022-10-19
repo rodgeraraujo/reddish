@@ -12,3 +12,12 @@ pub use snake_case::*;
 
 mod title_case;
 pub use title_case::*;
+
+mod pad;
+pub use pad::*;
+
+mod pad_end;
+pub use pad_end::*;
+
+mod truncate;
+pub use truncate::*;

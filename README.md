@@ -39,6 +39,10 @@ fn main() {
   - `.kebab_case([string=''])`: Converts `string` to kebab case.
   - `.snake_case([string=''])`: Converts `string` to snake case.
   - `.title_case([string=''])`: Converts `string` to title case.
+  - `.pad([string=''], pad_length, pad_char=' ')`: Adds padding of length `pad_length` to both ends of `string` using optional `pad_char`, if no `pad_char` is supplied the `pad_char` defaults to ' '
+  - `.pad_end([string=''], pad_length, pad_char=' ')`: Adds padding of length `pad_length` to the end of `string` using optional `pad_char`, if no `pad_char` is supplied the `pad_char` defaults to ' '
+  - `.truncate([string=''], truncate_length)`: Truncates `string` to `truncate_length`.
+
 
 - [ ] “Array” Methods
   - TODO:

@@ -15,7 +15,7 @@ include = ["Cargo.toml", "src/", "LICENSE", "README.md"]
 
 [feature]
 default = ["string"]
-string = ["camel_case", "capitalize", "kebab_case", "snake_case", "title_case"]
+string = ["camel_case", "capitalize", "kebab_case", "snake_case", "title_case", "pad", "pad_end", "truncate"]
 
 [dependencies]
 
