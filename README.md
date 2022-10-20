@@ -16,7 +16,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-reddish = "0.1.0"
+reddish = "0.2.0"
 ```
 
 ## Example
