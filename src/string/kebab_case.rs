@@ -1,5 +1,16 @@
 #![allow(dead_code)]
 
+/// Will use special characters, white space & capitalization to denote delimeters for kebab case
+///
+/// ```
+/// let result = reddish::kebab_case("Foo Bar");
+/// assert_eq!(result, "foo-bar");
+/// ```
+///
+/// ```
+/// let result = reddish::kebab_case("--foo--bar--");
+/// assert_eq!(result, "foo-bar");
+/// ```
 pub fn kebab_case(str: &str) -> String {
   let mut result = String::new();
   let mut is_last_special_char = false;

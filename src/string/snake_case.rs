@@ -1,5 +1,12 @@
 #![allow(dead_code)]
 
+/// Will convert a string into correctly formatted snake case using
+/// special characters and capitalization as delimeters
+///
+/// ```
+/// let result = reddish::snake_case("foo_barBaz_QuxQUUX");
+/// assert_eq!(result, "foo_bar_baz_qux_quux");
+/// ```
 pub fn snake_case(str: &str) -> String {
   let mut result = String::new();
   let mut last_lower = false;

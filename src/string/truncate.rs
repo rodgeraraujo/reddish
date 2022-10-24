@@ -1,3 +1,14 @@
+/// Truncates a string to the desired `truncate_len`
+///
+/// ```
+/// let result = reddish::truncate("Foo", 1);
+/// assert_eq!(result, "Fo");
+/// ```
+///
+/// ```
+/// let result = reddish::truncate("Foo", 4);
+/// assert_eq!(result, "");
+/// ```
 pub fn truncate(s: &str, truncate_len: usize) -> String {
   if truncate_len >= s.len() {
     return String::from("");
