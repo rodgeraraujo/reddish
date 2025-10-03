@@ -13,10 +13,11 @@ documentation = "https://docs.rs/reddish"
 homepage = "https://reddish.github.io"
 include = ["Cargo.toml", "src/", "LICENSE", "README.md"]
 
-[feature]
-default = ["array", "string"]
-array = ["concat", "difference", "find_index", "find_last_index", "join"]
-string = ["camel_case", "capitalize", "kebab_case", "snake_case", "title_case", "pad", "pad_end", "truncate"]
+[features]
+default = ["array", "string", "object"]
+array = []
+string = []
+object = []
 
 [dependencies]
 

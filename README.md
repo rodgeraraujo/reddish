@@ -50,8 +50,14 @@ fn main() {
   - `.find_last_index(vec: Vec<T>, find: F)`: Iterates over elements of collection from right to left, and returns the index of the found element.
   - `.join(vec: Vec<T>, sep: &str)`: Converts all elements in array into a string separated by separator.
 
-- [ ] “Object” Methods
-  - TODO:
+- [x] "Object" Methods
+  - `.keys(map: &HashMap<K, V>)`: Returns a vector containing all the keys of a HashMap.
+  - `.values(map: &HashMap<K, V>)`: Returns a vector containing all the values of a HashMap.
+  - `.entries(map: &HashMap<K, V>)`: Returns a vector containing all the key-value pairs of a HashMap as tuples.
+  - `.has_key(map: &HashMap<K, V>, key: &K)`: Checks if a HashMap contains a specific key.
+  - `.pick(map: &HashMap<K, V>, keys: &[K])`: Creates a new HashMap with only the specified keys from the original HashMap.
+  - `.omit(map: &HashMap<K, V>, keys: &[K])`: Creates a new HashMap excluding the specified keys from the original HashMap.
+  - `.merge(map1: &HashMap<K, V>, map2: &HashMap<K, V>)`: Merges two HashMaps, with values from the second HashMap overwriting values from the first.
 
 - [ ] “Collection” Methods
   - TODO:

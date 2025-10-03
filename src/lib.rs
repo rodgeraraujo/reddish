@@ -1,7 +1,14 @@
+#[cfg(feature = "string")]
 mod string;
-// #[cfg(feature = "string")]
+#[cfg(feature = "string")]
 pub use string::*;
 
+#[cfg(feature = "array")]
 mod array;
-// #[cfg(feature = "array")]
+#[cfg(feature = "array")]
 pub use array::*;
+
+#[cfg(feature = "object")]
+mod object;
+#[cfg(feature = "object")]
+pub use object::*;
