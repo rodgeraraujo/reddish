@@ -27,3 +27,8 @@ pub use crypto::*;
 mod random;
 #[cfg(feature = "random")]
 pub use random::*;
+
+#[cfg(feature = "datetime")]
+mod datetime;
+#[cfg(feature = "datetime")]
+pub use datetime::*;

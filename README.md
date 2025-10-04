@@ -88,3 +88,16 @@ fn main() {
   - `.uuid()`: Generates a random UUID v4.
   - `.random_bool()`: Generates a random boolean value.
   - `.random_bool_with_probability(probability: f64)`: Generates a random boolean with a specified probability of being true.
+
+- [x] "DateTime" Methods
+  - `.format_duration(seconds: u64)`: Formats a duration in seconds into a human-readable string.
+  - `.time_ago(datetime: &DateTime<Utc>)`: Formats a datetime as a relative time string (e.g., "2 hours ago").
+  - `.is_weekend(datetime: &DateTime<Utc>)`: Checks if a given date falls on a weekend (Saturday or Sunday).
+  - `.days_between(date1: &DateTime<Utc>, date2: &DateTime<Utc>)`: Calculates the number of days between two dates.
+  - `.add_days(datetime: &DateTime<Utc>, days: i64)`: Adds a specified number of days to a date.
+  - `.start_of_week(datetime: &DateTime<Utc>)`: Returns the start of the week (Monday) for a given date.
+  - `.end_of_month(datetime: &DateTime<Utc>)`: Returns the last day of the month for a given date.
+  - `.parse_date(date_str: &str)`: Parses a date string in various common formats.
+  - `.format_date(datetime: &DateTime<Utc>, format: &str)`: Formats a datetime using a specified format string.
+  - `.format_date_human(datetime: &DateTime<Utc>)`: Formats a datetime in a common human-readable format.
+  - `.format_date_iso(datetime: &DateTime<Utc>)`: Formats a datetime in ISO 8601 format.
