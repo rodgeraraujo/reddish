@@ -22,3 +22,8 @@ pub use collection::*;
 mod crypto;
 #[cfg(feature = "crypto")]
 pub use crypto::*;
+
+#[cfg(feature = "random")]
+mod random;
+#[cfg(feature = "random")]
+pub use random::*;

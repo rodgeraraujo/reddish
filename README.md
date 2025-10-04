@@ -77,3 +77,14 @@ fn main() {
   - `.url_decode(data: &str)`: URL decodes the input string. Returns None if the input is invalid.
   - `.hex_encode(data: &str)`: Encodes the input string to hexadecimal.
   - `.hex_decode(data: &str)`: Decodes a hexadecimal string. Returns None if the input is invalid.
+
+- [x] "Random" Methods
+  - `.random_int(min: i32, max: i32)`: Generates a random integer between min and max (inclusive).
+  - `.random_float(min: f64, max: f64)`: Generates a random floating-point number between min and max (exclusive of max).
+  - `.random_choice(slice: &[T])`: Selects a random element from a slice. Returns None if the slice is empty.
+  - `.shuffle(vec: &mut Vec<T>)`: Shuffles a vector in place using the Fisher-Yates algorithm.
+  - `.sample(slice: &[T], n: usize)`: Selects n random elements from a slice without replacement.
+  - `.random_string(length: usize)`: Generates a random string of the specified length using alphanumeric characters.
+  - `.uuid()`: Generates a random UUID v4.
+  - `.random_bool()`: Generates a random boolean value.
+  - `.random_bool_with_probability(probability: f64)`: Generates a random boolean with a specified probability of being true.
