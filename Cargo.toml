@@ -14,10 +14,11 @@ homepage = "https://reddish.github.io"
 include = ["Cargo.toml", "src/", "LICENSE", "README.md"]
 
 [features]
-default = ["array", "string", "object"]
+default = ["array", "string", "object", "collection"]
 array = []
 string = []
 object = []
+collection = []
 
 [dependencies]
 

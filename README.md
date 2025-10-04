@@ -59,5 +59,11 @@ fn main() {
   - `.omit(map: &HashMap<K, V>, keys: &[K])`: Creates a new HashMap excluding the specified keys from the original HashMap.
   - `.merge(map1: &HashMap<K, V>, map2: &HashMap<K, V>)`: Merges two HashMaps, with values from the second HashMap overwriting values from the first.
 
-- [ ] “Collection” Methods
-  - TODO:
+- [x] "Collection" Methods
+  - `.chunk(vec: &[T], size: usize)`: Splits a vector into chunks of the specified size.
+  - `.flatten(nested: &[Vec<T>])`: Flattens a nested vector into a single-level vector.
+  - `.group_by(vec: &[T], key_fn: F)`: Groups elements of a vector by a key function.
+  - `.unique(vec: &[T])`: Returns a vector with unique elements, preserving order of first occurrence.
+  - `.partition(vec: &[T], predicate: F)`: Partitions a vector into two vectors based on a predicate function.
+  - `.zip(vec1: &[T], vec2: &[U])`: Combines two vectors into a vector of tuples.
+  - `.count_by(vec: &[T], key_fn: F)`: Counts elements in a vector by a key function.

@@ -12,3 +12,8 @@ pub use array::*;
 mod object;
 #[cfg(feature = "object")]
 pub use object::*;
+
+#[cfg(feature = "collection")]
+mod collection;
+#[cfg(feature = "collection")]
+pub use collection::*;
