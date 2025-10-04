@@ -14,12 +14,18 @@ homepage = "https://reddish.github.io"
 include = ["Cargo.toml", "src/", "LICENSE", "README.md"]
 
 [features]
-default = ["array", "string", "object", "collection"]
+default = ["array", "string", "object", "collection", "crypto"]
 array = []
 string = []
 object = []
 collection = []
+crypto = []
 
 [dependencies]
+md5 = "0.7"
+sha2 = "0.10"
+base64 = "0.21"
+percent-encoding = "2.3"
+hex = "0.4"
 
 [dev-dependencies]

@@ -67,3 +67,13 @@ fn main() {
   - `.partition(vec: &[T], predicate: F)`: Partitions a vector into two vectors based on a predicate function.
   - `.zip(vec1: &[T], vec2: &[U])`: Combines two vectors into a vector of tuples.
   - `.count_by(vec: &[T], key_fn: F)`: Counts elements in a vector by a key function.
+
+- [x] "Crypto/Hash" Methods
+  - `.md5_hash(data: &str)`: Computes the MD5 hash of the input data and returns it as a hexadecimal string.
+  - `.sha256_hash(data: &str)`: Computes the SHA256 hash of the input data and returns it as a hexadecimal string.
+  - `.base64_encode(data: &str)`: Encodes the input string to Base64.
+  - `.base64_decode(data: &str)`: Decodes a Base64 encoded string. Returns None if the input is invalid.
+  - `.url_encode(data: &str)`: URL encodes the input string.
+  - `.url_decode(data: &str)`: URL decodes the input string. Returns None if the input is invalid.
+  - `.hex_encode(data: &str)`: Encodes the input string to hexadecimal.
+  - `.hex_decode(data: &str)`: Decodes a hexadecimal string. Returns None if the input is invalid.
