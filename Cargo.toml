@@ -2,16 +2,17 @@
 name = "reddish"
 version = "0.2.0"
 edition = "2021"
-description = """
-A Rust utility library
-"""
-authors = ["Rogério Araújo <rogerio.araujo@mail.com>"]
+description = "A comprehensive Rust utility library, providing 55+ functions for string, array, object, crypto, random, and datetime operations."
+authors = ["Rogério Araújo <rogerio.araujo@outlook.com>"]
 license = "MIT"
 readme = "README.md"
+keywords = ["utility", "lodash", "ramda", "functional", "helpers"]
+categories = ["algorithms", "data-structures", "development-tools", "encoding", "date-and-time"]
 repository = "https://github.com/rodgeraraujo/reddish"
 documentation = "https://docs.rs/reddish"
-homepage = "https://reddish.github.io"
-include = ["Cargo.toml", "src/", "LICENSE", "README.md"]
+homepage = "https://github.com/rodgeraraujo/reddish"
+include = ["Cargo.toml", "src/", "LICENSE", "README.md", "examples/"]
+rust-version = "1.60"
 
 [features]
 default = ["array", "string", "object", "collection", "crypto", "random", "datetime"]
