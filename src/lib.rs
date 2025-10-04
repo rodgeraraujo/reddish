@@ -17,3 +17,8 @@ pub use object::*;
 mod collection;
 #[cfg(feature = "collection")]
 pub use collection::*;
+
+#[cfg(feature = "crypto")]
+mod crypto;
+#[cfg(feature = "crypto")]
+pub use crypto::*;
